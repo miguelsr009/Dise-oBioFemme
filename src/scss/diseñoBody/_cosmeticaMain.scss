@@ -1,0 +1,28 @@
+@use '../bases/variables' as v ;
+@use '../bases/mixin' as m ;
+
+.contenedor-cosmetica{
+    margin-top: 3rem;
+    text-align: center;
+    
+    .contenedor-img-cosmetica{
+       // height: 100vh;
+
+        @include m.tablet{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+        .img-cosmetica{
+            img{
+                width: 40rem;
+                height: 22rem;
+                border-radius: 0.7rem;
+            }
+        }
+    }
+}
+
+.nombre-ing-produ{
+    text-transform: uppercase;
+}

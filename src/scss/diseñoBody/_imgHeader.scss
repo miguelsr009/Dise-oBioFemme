@@ -1,0 +1,80 @@
+@use '../bases/variables' as v ;
+
+.contenedor-seccion-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedor-img-header{
+   
+    .img-header{
+        height: 6rem;
+        width: 7rem;
+    }
+}
+
+.navegacion1{
+    //width: 15%;
+
+    .nav-1{
+        
+        a{
+            color: v.$grisPagina;
+            font-family: "BioFemme Comfortaa", Sans-serif;
+            margin-right: 0.5rem;
+            font-weight: normal;
+            font-size: 18px;
+            //text-decoration: none;
+        }
+
+        .tienda-p{
+            color: v.$rosado;
+          }
+
+          .productos-p{
+            text-decoration: none;
+          }
+
+          a:hover{
+            color: v.$rosado;
+            text-decoration: underline;
+          }
+
+          
+    }
+}
+
+.nav-2{
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    .icono{
+        height: 2rem;
+        width: 2rem;
+        margin: 0;
+    }
+    .texto{
+        div{
+            color: v.$grisPagina;
+            font-family: "BioFemme Comfortaa", Sans-serif;
+        }
+    }
+}
+
+.Biofemme-p{
+    a{
+        color: v.$grisPagina;
+        font-family: "BioFemme Comfortaa", Sans-serif;
+        margin-right: 0.5rem;
+        font-weight: normal;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: v.$rosado;
+        text-decoration: underline;
+    }
+}

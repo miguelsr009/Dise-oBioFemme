@@ -1,0 +1,85 @@
+@use '../bases/mixin' as m;
+@use '../bases/variables' as v;
+
+.contenido-footer{
+    margin-top: 3rem;
+    
+    @include m.tablet{
+        display: flex;
+        justify-content: space-evenly;
+        .oculta{
+            display: none;
+        }
+    }
+
+    .contenido1{
+        p{
+            color: v.$rosado;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.img-footer{
+    height: 6rem;
+    width: 7rem;
+}
+
+.title-footer{
+    text-transform: uppercase;
+    //font-weight: 600;
+    font-size: 1.3rem;
+    font-family: "BioFemme Comfortaa", Sans-serif;
+    margin: 0;
+}
+
+.enlaces-footer{
+    display: inline-grid;
+    a{
+        text-decoration: none;
+        color: v.$negro;
+        margin-top: 10px;
+        
+    }
+}
+
+.img-pagos{
+    margin-top: 1.5rem;
+   img{
+    margin-right: 2rem;
+   }
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: v.$rosado;
+    color: v.$blanco;
+  }
+
+  .derechos{
+    display: none;
+}
+
+
+  @include m.tablet {
+    .derechos{
+        width: 80%;
+        display: block;
+      }
+    }
+
+
+  .contenido-derechos{
+    text-align: center;
+    @include m.tablet{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+  }

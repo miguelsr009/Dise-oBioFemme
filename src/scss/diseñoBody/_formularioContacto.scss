@@ -1,0 +1,74 @@
+@use '../bases/mixin' as m;
+@use '../bases/variables' as v;
+
+.imagen-contacto{
+    width: 100%;
+    margin-top: 4rem;
+    background-image: url('https://www.compras.biofemme.com.ec/wp-content/uploads/2020/11/bg-movil-sus.jpg');
+    //background-position: center center;
+    background-position: 23% 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background-size: contain;
+    padding: v.$separacion * 2 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.contacto{
+    h2{
+        color: v.$rosado;
+        font-family: "BioFemme Comfortaa", Sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    p{
+        color: v.$grisPagina;
+        font-family: "Futura", Sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+.formulario-contacto{
+    .form{
+        display: flex;
+        input[type="email"]{
+
+            background-color: #ffffff;
+            border-width: 0px 0px 0px 0px;
+            border-radius: 50px 0px 0px 50px;
+
+            font-size: 18px;
+            min-height: 30px;
+            width: 100%;
+            padding: 7px 20px;
+
+        }
+
+        input[type="submit"]{
+            color: v.$blanco;
+            border-color: v.$rosado;
+            background-color: v.$rosado;
+            font-family: "Futura", Sans-serif;
+            font-weight: 500;
+            border-style: solid;
+            border-width: 1px 1px 1px 1px;
+            border-radius: 0px 50px 50px 0px;
+            padding: 10px 30px 10px 30px;
+        }
+
+        input[type="submit"]:hover{
+            cursor: pointer;
+            background-color: v.$rosadoClaro;
+            color: v.$rosado;
+        }
+    }
+}
+
+
+

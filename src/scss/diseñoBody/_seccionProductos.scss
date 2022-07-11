@@ -1,0 +1,105 @@
+@use '../bases/mixin' as m;
+@use '../bases/variables' as v;
+
+.elementor-seccion-products{
+    margin-top: 2rem;
+    .contenido-seccion-products{
+
+        .contenido-img-products{
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            
+            @include m.desktop {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .img-productos{
+                margin-right: 5rem;
+
+
+                .img-perfume{
+                    height: 20rem;
+                    width: 15rem;
+                }
+            }
+
+            .img-productos:hover{
+                box-shadow: 4px 11px 6px 6px rgba(205,205,205,0.76);
+                -webkit-box-shadow: 4px 11px 6px 6px rgba(205,205,205,0.76);
+                -moz-box-shadow: 4px 11px 6px 6px rgba(205,205,205,0.76);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .btn-ver{
+        margin-top: 4rem;
+        text-align: center;
+
+        .btn{
+            color: v.$blanco;
+            border-style: solid;
+            border-width: 1px;
+            border-color: v.$rosado;
+            border-radius: 50px;
+            background-color: v.$rosado ;
+            text-decoration: none;
+            padding: 15px 40px;
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .btn:hover{
+            cursor: pointer;
+            background-color: v.$rosadoClaro;
+            color: v.$rosado;
+        }
+    }
+}
+
+.titulo-seccion-products{
+    padding: 0 4rem;
+   
+    p{
+        text-transform: uppercase;
+        font-family: "BioFemme Comfortaa", Sans-serif;
+        letter-spacing: 1.5px;
+        margin: 0;
+        
+    }
+
+    samp{
+        p{
+            color: v.$rosado;
+            font-size: 35px;
+            font-weight: 600;
+        }
+    }
+}
+
+.contenido-descripcion-products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: v.$rosadoClaro;
+
+    .texto-contenido-products{
+        p{
+            margin: 0;
+            font-family: "BioFemme Comfortaa", Sans-serif;
+            color: inherit;
+            padding: 3px 10px;
+        }
+    }
+
+    .icon-carrito{
+        img{
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+}
